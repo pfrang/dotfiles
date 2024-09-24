@@ -61,4 +61,4 @@ vim.opt.scrolloff = 10
 -- For only displaying the filename in the title
 vim.opt.titlestring = '%t'
 -- Change cwd to the directory of the file being edited
-vim.opt.autochdir = true
+-- vim.opt.autochdir = true

@@ -16,13 +16,13 @@ return {
                 mappings = {
                     ['P'] = { 'toggle_preview', config = { use_float = false, use_image_nvim = true } },
                     ['<F5>'] = 'refresh',
-                    ["<bs>"] = "navigate_up",
+                    ['<bs>'] = 'navigate_up',
                 },
             },
             filesystem = {
                 use_libuv_file_watcher = true,
                 bind_to_cwd = false,
-                hijack_netrw_behavior = "disabled",
+                hijack_netrw_behavior = 'disabled',
                 follow_current_file = {
                     enabled = true,
                 },

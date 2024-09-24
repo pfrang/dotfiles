@@ -48,11 +48,19 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+    desc = 'Highlight when yanking (copying) text',
+    group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })
 
+-- Map Ctrl + b to go back in the jump list
+vim.keymap.set('n', '<C-b>', '<C-o>', { noremap = true, silent = true, desc = 'Go back in jump list' })
+
+-- Map Ctrl + o to go to function definition using LSP
+vim.keymap.set('n', '<C-o>', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true, desc = 'Go to function definition' })
+
+-- vim.api.nvim_set_keymap('i', '<C-m>', '<C-p>', { noremap = true, silent = true, desc = 'Navigate up in list' })
+-- vim.api.nvim_set_keymap('c', '<C-m>', '<C-p>', { noremap = true, silent = true, desc = 'Navigate up in list in command mode' })
 -- vim: ts=2 sts=2 sw=2 et
