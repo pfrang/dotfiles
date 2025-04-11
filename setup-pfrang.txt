@@ -1,0 +1,41 @@
+sudo apt update
+sudo apt install build-essential
+
+----Git-----
+sudo apt-get install git
+
+gh config global user.name
+gh config global user.email
+
+-----ZSH and oh-my-zsh---
+
+sudo apt install zsh
+
+oh-my-zsh: https://ohmyz.sh/#install
+
+
+zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
+-----Neovim------
+
+neovim: Install from pacakge, apt only has up to 0.9.5
+tarball: https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package
+
+Nerd fonts:https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-command-line-in-debian-or-other-linux-f3067918a88c 
+
+see dotfiles /nvim for config
+
+Lazy Nvim for pckg manager?
+
+------tmux---
+sudo apt-get install tmux
+
+TPM?
+
+-----ssh----
+
+ssh keygen (blabla)
+
+----Nodejs---
+
+https://nodejs.org/en/download
