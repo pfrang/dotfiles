@@ -19,7 +19,10 @@ zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting/bl
 -----Neovim------
 
 neovim: Install from pacakge, apt only has up to 0.9.5
-tarball: https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package
+tarball:  https://github.com/neovim/neovim/releases/latest/
+
+Add it to /opt dir
+Add path env to it in .zshrc because it also relies on runtime files
 
 Nerd fonts:https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-command-line-in-debian-or-other-linux-f3067918a88c 
 
