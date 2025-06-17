@@ -28,6 +28,9 @@ Nerd fonts:https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-
 
 see dotfiles /nvim for config
 
+// Set path in .zshrc to nvim config
+export XDG_CONFIG_HOME="$HOME:/code/dotfiles"
+
 Lazy Nvim for pckg manager?
 
 ------tmux---
