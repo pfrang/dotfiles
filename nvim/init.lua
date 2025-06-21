@@ -110,6 +110,11 @@ vim.o.mouse = 'a'
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
+vim.o.tabstop = 2        -- A tab character is 2 spaces wide
+vim.o.shiftwidth = 2     -- Indent levels are 2 spaces wide
+vim.o.softtabstop = 2    -- A press of <Tab> inserts 2 spaces
+-- vim.o.expandtab = true   -- Use spaces instead of tab characters
+
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -757,14 +762,14 @@ require('lazy').setup({
         -- have a well standardized coding style. You can add additional
         -- languages here or re-enable it for the disabled ones.
         local disable_filetypes = { c = true, cpp = true }
-        if disable_filetypes[vim.bo[bufnr].filetype] then
-          return nil
-        else
+        -- if disable_filetypes[vim.bo[bufnr].filetype] then
+        --   return nil
+        -- else
           return {
             timeout_ms = 500,
             lsp_format = 'fallback',
           }
-        end
+        -- end
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
