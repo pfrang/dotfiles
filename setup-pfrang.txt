@@ -31,7 +31,14 @@ see dotfiles /nvim for config
 // Set path in .zshrc to nvim config
 export XDG_CONFIG_HOME="$HOME:/code/dotfiles"
 
-Lazy Nvim for pckg manager?
+Add clangd to ARM processor 
+
+➜  peder-stop-and-wait-tcp git:(master) ln -s ln -s /usr/bin/clangd ~/.local/share/nvim/mason/bin/clangd
+ln: target '/home/pfrang/.local/share/nvim/mason/bin/clangd': No such file or directory
+➜  peder-stop-and-wait-tcp git:(master) ln -s /usr/bin/clangd ~/.local/share/nvim/mason/bin/clangd
+➜  peder-stop-and-wait-tcp git:(master) mkdir ~/.local/share/nvim/mason/packages/clangd
+➜  peder-stop-and-wait-tcp git:(master) nvim server.c
+
 
 ------tmux---
 sudo apt-get install tmux
